@@ -9,6 +9,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/framework.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 <body id="top">
 <div class="wrapper row1">
@@ -106,7 +107,7 @@
                     </div>
                 </div>
                 <div class="input-group input-group-icon">
-                    <input name="dob" placeholder="Date of Birth (DD/MM/YYYY)" type="text">
+                    <input id="datepicker" name="dob" placeholder="Date of Birth (DD/MM/YYYY)"/>
                     <div class="input-icon">
                         <i class="fa fa-calendar"> </i>
                     </div>
@@ -129,6 +130,12 @@
                     <input name="uname" placeholder="User Name" type="text">
                     <div class="input-icon">
                         <i class="fa fa-user"> </i>
+                    </div>
+                </div>
+                <div class="input-group input-group-icon">
+                    <input name="email" placeholder="Email Address" type="text">
+                    <div class="input-icon">
+                        <i class="fa fa-envelope"> </i>
                     </div>
                 </div>
                 <div class="input-group input-group-icon">
@@ -185,5 +192,12 @@
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/additional-methods.min.js"></script>
 <script src="javascript/validation.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
 </body>
 </html>

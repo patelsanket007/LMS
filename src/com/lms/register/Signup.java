@@ -30,14 +30,16 @@ public class Signup extends HttpServlet {
         String education  = request.getParameter("edu");
         String address  = request.getParameter("address");
         long ctNumber =Long.parseLong(request.getParameter("mnumber")); 
-        int dateOfBirth = Integer.parseInt(request.getParameter("dob"));
+        String dateOfBirth = request.getParameter("dob");
+        out.println(dateOfBirth);
         String gender = request.getParameter("gender");
         String username = request.getParameter("uname");
+        String email = request.getParameter("email");
         String password = request.getParameter("pass");
-        //out.println(fullName+ education+ address+ ctNumber+ dateOfBirth+ username+ password+gender);
-        RegisterDAO rd = new RegisterDAO();
+        //out.println(fullName+ education+ address+ ctNumber+ dateOfBirth+ username+ email+ password+gender);
+       RegisterDAO rd = new RegisterDAO();
         try {
-			rd.addStudent(fullName, education, address, ctNumber, dateOfBirth, username, password, gender);
+			rd.addStudent(fullName, education, address, ctNumber, dateOfBirth, username, email, password, gender);
 			out.println("Registered");
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
