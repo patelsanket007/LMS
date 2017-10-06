@@ -34,7 +34,7 @@ public class Signup extends HttpServlet {
         String gender = request.getParameter("gender");
         String username = request.getParameter("uname");
         String password = request.getParameter("pass");
-        out.println(fullName+ education+ address+ ctNumber+ dateOfBirth+ username+ password+gender);
+        //out.println(fullName+ education+ address+ ctNumber+ dateOfBirth+ username+ password+gender);
         RegisterDAO rd = new RegisterDAO();
         try {
 			rd.addStudent(fullName, education, address, ctNumber, dateOfBirth, username, password, gender);
