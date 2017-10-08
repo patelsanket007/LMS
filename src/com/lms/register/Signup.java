@@ -40,7 +40,7 @@ public class Signup extends HttpServlet {
        RegisterDAO rd = new RegisterDAO();
         try {
 			rd.addStudent(fullName, education, address, ctNumber, dateOfBirth, username, email, password, gender);
-			out.println("Registered");
+                        response.sendRedirect("login.jsp");
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

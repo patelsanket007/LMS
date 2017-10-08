@@ -96,10 +96,12 @@
     <button>create</button>
     <p class="message">Already registered? <a href="#">Sign In</a></p>
   </form>
-  <form class="login-form">
-    <input name="username" type="text" placeholder="username"/>
-    <input name="password" type="password" placeholder="password"/>
+  <form class="login-form" action ="Signin" method ="post">
+    <div style="color:red">${errorMessage}</div>
+    <input name="username" type="text" placeholder="Username/Email"/>
+    <input name="password" type="password" placeholder="Password"/>
     <button>login</button>
+    
     <p class="message">Not registered? <a href="sign_up.jsp">Create an account</a></p>
   </form>
 </div>

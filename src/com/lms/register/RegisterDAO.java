@@ -22,7 +22,7 @@ public class RegisterDAO {
         System.out.println(gender);
         String url = "jdbc:mysql://localhost:3306/lms";
     	String user="root";
-    	String pass = "root";
+    	String pass = "@*Alps20071995*@";
     	String query = "insert into student values(?,?,?,?,?,?,?,?,?)";
     	Class.forName("com.mysql.jdbc.Driver");
     	con  = DriverManager.getConnection(url,user,pass);
