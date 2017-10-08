@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-<title>PSE Exam</title>
+<title>IMO Exam</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
@@ -32,9 +32,9 @@
       </li>
         <li class="active"><a class="drop" href="#">Competitive Exams</a>
         <ul>
-          <li class="active"><a class="drop">Std - 5</a>
+          <li><a class="drop" href="#">Std - 5</a>
           <ul>
-              <li class="active"><a href="pse.jsp">PSE</a></li>
+              <li><a href="pse.jsp">PSE</a></li>
           </ul>
           </li>
           <li><a class="drop" href="#">Std - 8</a>
@@ -43,10 +43,10 @@
               <li><a href="nmms.jsp">NMMS</a></li>
             </ul>
           </li>
-          <li><a class="drop" href="#">Std - 9</a>
+          <li class="active"><a class="drop">Std - 9</a>
             <ul>
               <li><a href="olympiad.jsp">Olympiad</a></li>
-              <li><a href="imo.jsp">IMO</a></li>
+              <li class="active"><a href="imo.jsp">IMO</a></li>
               <li><a href="nso.jsp">NSO</a></li>
               <li><a href="nstse.jsp">NSTSE</a></li>
               <li><a href="nmtc.jsp">NMTC</a></li>
@@ -83,7 +83,7 @@
 <div class="wrapper row3">
   <main class="hoc container clear"> 
     <!-- main body -->
-    <p style="font-size: 25px;color: black;">PSE - Primary Scholarship Examination </p>
+    <p style="font-size: 25px;color: black;">IMO - Primary Scholarship Examination </p>
     <img src="images/line.jpg"/>
     <div class="caption">
         <i class="fa fa-flag"></i>
