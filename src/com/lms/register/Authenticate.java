@@ -8,7 +8,7 @@ public class Authenticate {
     boolean connectDatabase(String username , String Password) throws ClassNotFoundException, SQLException{
         String url = "jdbc:mysql://localhost:3306/lms";
     	String user="root";
-    	String pass = "@*Alps20071995*@";
+    	String pass = "root";
         Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(url,user,pass);
         Statement st = con.createStatement();

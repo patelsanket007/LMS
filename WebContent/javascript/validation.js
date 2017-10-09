@@ -1,14 +1,23 @@
 $("#sign-form").validate({
         rules:{
             pass: {
-                required: true               
+                required: true,
+                minlength: 8,
+                maxlength: 16
             },
             retype_password: {
                     required: true,
                     equalTo: "#password"
             },
             uname: {
-            required: true
+            required: true,
+            minlength: 4,
+            maxlength: 10
+            },
+            email: {
+            	required: true,
+            	email: true,
+            	accept: "[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}"
             },
             name: {
                 required: true
@@ -37,6 +46,10 @@ $("#sign-form").validate({
             },
             retype_password: {
                 equalTo: "Password don't match"
+            },
+            uname: {
+            		minlength: "Username should be 4 to 10 charaters long.",
+            		maxlength: "Username should be 4 to 10 charaters long."
             }
         }
     });

@@ -101,13 +101,13 @@
                     </div>
                 </div>
                 <div class="input-group input-group-icon">
-                    <input name="mnumber" placeholder="Mobile Number" type="text">
+                    <input name="mnumber" placeholder="Mobile Number (10 Digits)" type="text">
                     <div class="input-icon">
                         <i class="fa fa-mobile"> </i>
                     </div>
                 </div>
                 <div class="input-group input-group-icon">
-                    <input id="datepicker" name="dob" placeholder="Date of Birth (DD/MM/YYYY)"/>
+                    <input id="datepicker" name="dob" placeholder="Date of Birth (MM/DD/YYYY)"/>
                     <div class="input-icon">
                         <i class="fa fa-calendar"> </i>
                     </div>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="input-group input-group-icon">
-                    <input name="pass" placeholder="password" type="password" id="password" >
+                    <input name="pass" placeholder="password" type="password" id="password">
                     <div class="input-icon">
                         <i class="fa fa-lock"> </i>
                     </div>
@@ -196,8 +196,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script>
   $(document).ready(function() {
-    $("#datepicker").datepicker();
+    $("#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true
+    });
   });
-  </script>
+</script>
+
 </body>
 </html>
