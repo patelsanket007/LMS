@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
     <display-name>LMS</display-name>
+    <servlet>
+        <servlet-name>VerifyEmail</servlet-name>
+        <servlet-class>com.lms.register.VerifyEmail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResendLink</servlet-name>
+        <servlet-class>com.lms.register.ResendLink</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendOTP</servlet-name>
+        <servlet-class>com.lms.register.SendOTP</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetPassword</servlet-name>
+        <servlet-class>com.lms.register.ResetPassword</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Signin</servlet-name>
         <url-pattern>/Signin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VerifyEmail</servlet-name>
+        <url-pattern>/VerifyEmail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResendLink</servlet-name>
+        <url-pattern>/ResendLink</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendOTP</servlet-name>
+        <url-pattern>/SendOTP</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetPassword</servlet-name>
+        <url-pattern>/ResetPassword</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

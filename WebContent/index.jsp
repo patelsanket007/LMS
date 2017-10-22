@@ -16,9 +16,9 @@
       <h1><a href="index.jsp"><img src="images/logo.jpg"/></a></h1>
   </header>
 </div>
-<div class="wrapper row4">
+<div class="wrapper row4" >
   <nav id="mainav" class="hoc clear"> 
-    <ul class="clear">
+      <ul class="clear" >
       <li class="active"><a href="index.jsp">Home</a></li>
       <li><a class="drop" href="#">Product</a>
         <ul>
